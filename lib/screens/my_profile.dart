@@ -156,55 +156,6 @@ class _MyProfileState extends State<MyProfile>
       ),
     );
   }
-
-  Widget _buildDrawer() {
-    return Drawer(
-      backgroundColor: Colors.grey[900],
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          UserAccountsDrawerHeader(
-            accountName: const Text('Ly Hou'),
-            accountEmail: const Text('roeunchanthou1401@gmail.com'),
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: Colors.orange,
-              child: ClipOval(
-                child: Image.asset(
-                  'assets/poster/admin.jpg',  // Replace with your image path
-                  fit: BoxFit.cover,
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-            decoration: BoxDecoration(
-              color: Colors.grey[800],
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.home, color: Colors.white),
-            title: const Text('Home', style: TextStyle(color: Colors.white)),
-            onTap: () {},
-          ),
-          const Divider(color: Colors.grey), // Divider under Home
-          ListTile(
-            leading: const Icon(Icons.bookmark, color: Colors.white),
-            title: const Text('Watchlist', style: TextStyle(color: Colors.white)),
-            onTap: () {},
-          ),
-          const Divider(color: Colors.grey), // Divider under Watchlist
-          ListTile(
-            leading: const Icon(Icons.live_tv, color: Colors.white),
-            title: const Text('Live TV', style: TextStyle(color: Colors.white)),
-            onTap: () {},
-          ),
-          const Divider(color: Colors.grey), // Divider under Live TV
-          // Add more ListTile items with dividers if necessary
-        ],
-      ),
-    );
-  }
-
 }
 
 class _ProfileStatItem extends StatelessWidget {

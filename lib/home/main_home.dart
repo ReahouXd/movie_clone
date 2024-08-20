@@ -21,7 +21,7 @@ class _MultiPageState extends State<MultiPage> {
   final List<Widget> _screenList = [];
 
   final HomeScreen _homeScreen = HomeScreen();
-  final Trending _trending = Trending();
+  final Trending _trending = const Trending();
   final Activity _activity = Activity();
   final FindFriend _findFriend = FindFriend();
   final MyProfile _myProfile = const MyProfile();

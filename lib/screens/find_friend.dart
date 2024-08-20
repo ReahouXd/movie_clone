@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable
+// ignore_for_file: must_be_immutable, overridden_fields
 
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -61,7 +61,7 @@ class _FindFriendState extends State<FindFriend>
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           sliver: SliverGrid(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
