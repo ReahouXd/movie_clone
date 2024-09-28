@@ -9,7 +9,6 @@ class MyProfile extends StatefulWidget {
 
 class _MyProfileState extends State<MyProfile>
     with AutomaticKeepAliveClientMixin {
-
   @override
   bool get wantKeepAlive => true;
 
@@ -25,23 +24,8 @@ class _MyProfileState extends State<MyProfile>
 
   Widget _buildBody() {
     return Scaffold(
-      // drawer: _buildDrawer(),
-      backgroundColor: Colors.black.withOpacity(0.9),
+      backgroundColor: Colors.black.withOpacity(0.95),
       appBar: AppBar(
-      //   leading: Builder(
-      //   builder: (BuildContext context) {
-      //     return IconButton(
-      //       icon: const Icon(
-      //         Icons.menu,
-      //         size: 30,
-      //         color: Colors.white,
-      //       ),
-      //       onPressed: () {
-      //         Scaffold.of(context).openDrawer();
-      //       },
-      //     );
-      //   },
-      // ),
         backgroundColor: Colors.black,
         title: const Text(
           'My Profile',
